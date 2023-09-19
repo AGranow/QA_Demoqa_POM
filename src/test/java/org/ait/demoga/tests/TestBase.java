@@ -14,7 +14,7 @@ public class TestBase {
     @BeforeMethod
     public void init(){
         driver = new ChromeDriver();
-        driver.get("https://demoqa.com/");
+        driver.get("https://demoqa.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
