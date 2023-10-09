@@ -1,12 +1,12 @@
-package org.ait.demoga.tests;
+package org.ait.demoga.tests.bookStore;
 
-import org.ait.demoqa.pages.BookStoryPage;
+import org.ait.demoga.tests.TestBase;
+import org.ait.demoqa.pages.bookStore.BookStorePage;
 import org.ait.demoqa.pages.HomePage;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SearchBookTests extends TestBase{
+public class SearchBookTests extends TestBase {
 
     @BeforeMethod
     public void precondition(){
@@ -15,7 +15,7 @@ public class SearchBookTests extends TestBase{
 
     @Test
     public void searchBookTest(){
-        new BookStoryPage(driver)
+        new BookStorePage(driver)
                 .enterBookName("Git")
                 .verifyBookName("Git");
     }
