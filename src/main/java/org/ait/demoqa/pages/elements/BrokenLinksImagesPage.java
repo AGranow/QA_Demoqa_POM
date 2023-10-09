@@ -15,6 +15,9 @@ public class BrokenLinksImagesPage extends BasePage {
     }
 
 
+
+
+
     @FindBy(tagName = "img")
     List<WebElement> images;
 
